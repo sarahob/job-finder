@@ -1,5 +1,6 @@
 'use client';
 
+import Search from './search';
 import useJobData from "./useJobData";
 
 function Dashboard () {
@@ -9,6 +10,7 @@ function Dashboard () {
     if (isLoading) return 'Loading...'
     if (isError) return 'Something went wrong...'
     return <div>
+              {data && <Search data={data}/>} 
         {JSON.stringify(data)};
     </div>
   }

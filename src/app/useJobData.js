@@ -12,7 +12,7 @@ function useJobData() {
   const { data, error, isLoading } = useSWR(`/jobs`, fetcher);
 
   return {
-    data,
+    data: data?.data,
     isLoading,
     isError: error,
   };
