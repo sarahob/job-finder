@@ -44,7 +44,7 @@ function ReferralButton() {
   return (
     <Space.Compact
       style={{
-        width: '100%',
+        width: 500,
       }}
     >
       <Input placeholder="Slack Member ID" onChange={handleChange} />
