@@ -1,10 +1,7 @@
-export default function handler(req, res) {
+export default function sendReferralRequest(req, res) {
   // Get data from request body
-  console.log(req.body);
   const jobData = req.body.data;
-  const slackMemberId = req.body.slackMemberId; // U04T8D3MVS6
-
-  console.log(slackMemberId);
+  const slackMemberId = req.body.slackMemberId;
 
   // Get the webhook URL from the environment variables
   const webhookUrl = process.env.SLACK_WEBHOOK_URL;
@@ -21,14 +18,12 @@ export default function handler(req, res) {
       .json({ error: 'The environment variable SLACK_WEBHOOK_URL is missing' });
   }
 
-  console.log(webhookUrl);
-
   // Generates a Slack payload based on a job object
   const generateSlackPayload = (job, slackMemberId) => {
     return {
       attachments: [
         {
-          color: 'blue',
+          color: '#1890ff',
           blocks: [
             {
               type: 'section',
