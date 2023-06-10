@@ -95,6 +95,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+main {
+  display: block;
+} 
+.container-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 a {
   color: inherit;
   text-decoration: none;
