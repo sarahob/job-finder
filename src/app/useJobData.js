@@ -5,7 +5,6 @@
  */
 
 import useSWR from "swr";
-
 import localData from "./data/jobs.json";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());

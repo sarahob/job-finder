@@ -36,5 +36,3 @@ next-env.d.ts
 
 # environment variables
 .env
-
-src/app/data/*
