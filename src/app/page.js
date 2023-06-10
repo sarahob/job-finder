@@ -6,7 +6,6 @@ export default function Home({ data }) {
   return (
     <main className={styles.main}>
       <h1>She Sharp Hackathon 2023</h1>
-
       <Dashboard />
     </main>
   );

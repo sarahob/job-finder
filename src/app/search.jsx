@@ -35,7 +35,7 @@ const Search = ({data}) => {
         onSelect={onSelect}
         onSearch={handleSearch}
       >
-        <Input.Search size="large" placeholder="input here" enterButton />
+        <Input.Search size="large" placeholder="Search by job name, location or company..." enterButton />
       </AutoComplete>
     )
 }
