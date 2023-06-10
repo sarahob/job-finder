@@ -1,9 +1,13 @@
-import { Button } from 'antd';
+import { Input, Button, Space } from 'antd';
 import { useState } from 'react';
 
 function ReferralButton() {
-  const [data, setData] = useState();
+  const [data, setData] = useState('');
   const [slackMemberId, setSlackMemberID] = useState();
+
+  function handleChange(e) {
+    setSlackMemberID(e.target.value);
+  }
 
   function handleClick() {
     setData({
@@ -30,9 +34,6 @@ function ReferralButton() {
       last_indexed: '2023-06-09 12:06:56',
     });
 
-    const id = prompt('Please enter your Slack Member ID');
-    setSlackMemberID(id);
-
     fetch('/api/sendReferralRequest', {
       method: 'POST',
       headers: {
@@ -43,11 +44,16 @@ function ReferralButton() {
   }
 
   return (
-    <>
-      <Button size="large" type="primary" onClick={handleClick}>
+    <Space.Compact
+      style={{
+        width: '100%',
+      }}
+    >
+      <Input placeholder="Slack Member ID" onChange={handleChange} />
+      <Button type="primary" onClick={handleClick}>
         Request Referral
       </Button>
-    </>
+    </Space.Compact>
   );
 }
 
