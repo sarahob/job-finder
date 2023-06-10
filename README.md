@@ -2,8 +2,6 @@
 
 ## Send a Referral Request to Slack
 
----
-
 Our app is connected to the SheSharp Slack server. If you see a job post that you're interested in you can send a request for a referral. The message goes to the `#2023-hackathon-slackbot-projects` channel where members of our community can see it and respond to it.
 
 After pressing the "Request Referral" button you will be prompted to input your Slack Member ID. This allows the bot to tag you in the message. Your Slack Member ID can be found by following these steps:
