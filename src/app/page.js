@@ -1,12 +1,11 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import Dashboard from "./dashboard";
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <h1>She Sharp Hackathon 2023</h1>
-      </div>
+      <h1>She Sharp Hackathon 2023</h1>
+      <Dashboard />
     </main>
   );
 }
