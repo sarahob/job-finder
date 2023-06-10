@@ -5,23 +5,11 @@
  */
 
 import useSWR from "swr";
-import localData from "./data/jobs.json";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 function useJobData() {
-  if (process.env.NODE_ENV === "development") {
-    return {
-      data: localData,
-      isLoading: false,
-      isError: false,
-    };
-  }
-
-  const { data, error, isLoading } = useSWR(
-    `https://shesharpnl.github.io/hackathon-2023.sourcestack-data/assets/sourcestack-data-global.json`,
-    fetcher
-  );
+  const { data, error, isLoading } = useSWR(`/jobs`, fetcher);
 
   return {
     data,

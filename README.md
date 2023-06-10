@@ -1,13 +1,5 @@
 ## SheSharp x Reaktor Hackathon
 
-## Working locally with data
-
-To work locally to avoid CORS issues go to the SheSharp URL: https://shesharpnl.github.io/hackathon-2023.sourcestack-data/assets/sourcestack-data-global.json
-
-and copy the json to the file called `jobs.json` in the `app/data`.
-
-The hook to fetch the data will use the local data when in development mode.
-
 ## Next Boilerplate
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
