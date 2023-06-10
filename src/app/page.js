@@ -1,10 +1,8 @@
-import styles from "./page.module.css";
 import Dashboard from "./dashboard";
-import Search from "./search";
 
-export default function Home({ data }) {
+export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <h1>She Sharp Hackathon 2023</h1>
       <Dashboard />
     </main>
