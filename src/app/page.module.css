@@ -8,44 +8,44 @@
 }
 
 /* displayjob */
-.container-displayjob {
+.containerdisplayjob {
   display: flex;
   flex-direction: column;
   height: 100px;
 }
 
-.inside-displayjob {
+.insidedisplayjob {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.title-displayjob {
+.titledisplayjob {
   text-align: center;
 }
 
-.details-displayjob {
+.detailsdisplayjob {
   display: flex;
   flex-direction: column;
 
 }
 
-.company-displayjob {
+.companydisplayjob {
   display: flex;
   flex-direction: row;
 }
 
-.hours-diplayjob {
+.hoursdiplayjob {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.url-displayjob {
+.urldisplayjob {
   text-align: center;
 }
 
-.indexed-displayjob {
+.indexeddisplayjob {
   text-align: right;
 }
 

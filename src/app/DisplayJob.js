@@ -27,34 +27,32 @@ const Displayjob = () => {
     },
   ];
   return (
-    <div className={styles.container - displayjob}>
-      <div className={styles.inside - displayjob}>
-        <div className={styles.title - displayjob}>
+    <div className={styles.containerdisplayjob}>
+      <div className={styles.insidedisplayjob}>
+        <div className={styles.titledisplayjob}>
           <h2>{data[0].job_name}</h2>
         </div>
-        <div className={styles.details - displayjob}>
-          <h4 className={styles.location - diplayjob}>
+        <div className={styles.detailsdisplayjob}>
+          <h4 className={styles.locationdiplayjob}>
             Location: {data[0].city}, {data[0].country}
           </h4>
 
-          <h3 className={styles.company - displayjob}>
+          <h3 className={styles.companydisplayjob}>
             Company name:
             <a href={data[0].company_url}> {data[0].company_name}</a>
           </h3>
 
           <h3>Seniority: {data[0].seniority}</h3>
 
-          <div className={styles.hours - diplayjob}>
+          <div className={styles.hoursdiplayjob}>
             <h3>{data[0].hours}</h3> <h3>{data[0].remote}</h3>
           </div>
 
-          <h3 className={styles.url - displayjob}>
+          <h3 className={styles.urldisplayjob}>
             <a href={data[0].post_url}>Access the job posting</a>
           </h3>
 
-          <h3 className={styles.indexed - displayjob}>
-            {data[0].last_indexed}
-          </h3>
+          <h3 className={styles.indexeddisplayjob}>{data[0].last_indexed}</h3>
         </div>
       </div>
     </div>
