@@ -1,5 +1,13 @@
 ## SheSharp x Reaktor Hackathon
 
+### Goal:
+
+Our goal was to create a map visualization showing the jobs by location and when the user searched it would also filter the map and when they select a job it shows the details with a slack integration where you can enter your slack id and ask if anyone has a referral for the job you selected.
+
+We did not get that far but hope that you get an idea of what we were trying to achieve.
+
+We have some styling issues we couldn't reslove in time.
+
 ## Send a Referral Request to Slack
 
 Our app is connected to the SheSharp Slack server. If you see a job post that you're interested in you can send a request for a referral. The message goes to the `#2023-hackathon-slackbot-projects` channel where members of our community can see it and respond to it.
